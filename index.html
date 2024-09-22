@@ -15,7 +15,16 @@
             background-color: #d9f7d9; /* Light green background */
             color: #333;
         }
+        .header-date {
+            text-align: center;
+            color: #333; /* Text color */
+            padding: 10px 0; /* Some padding for spacing */
+            background: none; /* Remove background color */
+        }
         header {
+            background-image: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
@@ -24,6 +33,24 @@
             max-width: 150px;
             border-radius: 50%;
             border: 3px solid #ffffff;
+        }
+        header h1 {
+            font-size: 2.5em; /* Larger font size for the name */
+            margin: 10px 0;
+            color: #FFD700; /* Gold color for contrast */
+        }
+        header h2 {
+            font-size: 1.5em; /* Slightly larger for the second line */
+            margin: 5px 0;
+            color: #ffffff; /* Keep it white for contrast */
+            display: flex;
+            align-items: center; /* Align flag and text vertically */
+            justify-content: center; /* Center the items */
+        }
+        header h2 img {
+            margin-left: 10px; /* Space between text and flag */
+            width: 50px; /* Size of the flag */
+            height: auto; /* Maintain aspect ratio */
         }
         .social-icons {
             text-align: center;
@@ -124,15 +151,15 @@
     </style>
 </head>
 <body>
-    <header style="background-image: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center; color: #ffffff; padding: 20px 0; text-align: center;">
-        <img src="https://i.pinimg.com/736x/a7/62/fd/a762fdf850ea9c976d7cc7f0949de349.jpg" alt="Portrait of Ashok Sharma, Carpenter and Woodcraft Artist">
-        <h1>Ashok Sharma</h1>
-        <h2>(श्रीमान अशोक शर्मा)</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Animated-Flag-Nepal.gif" alt="Nepal Flag" style="width:90px; height: auto; border: none;">
-        <h2>Full-Time Carpenter & Woodcraft Artist</h2>
-        <p>A passionate carpenter and woodcraft artist with years of experience.</p>
-    </header>
-
+<div class="header-date" id="date-time"></div>
+<header>
+    <img src="https://i.pinimg.com/736x/a7/62/fd/a762fdf850ea9c976d7cc7f0949de349.jpg" alt="Portrait of Ashok Sharma, Carpenter and Woodcraft Artist">
+    <h1>Ashok Sharma</h1>
+    <h2>(श्रीमान अशोक शर्मा)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Animated-Flag-Nepal.gif" alt="Nepal Flag" style="width:90px; height: auto; border: none;">
+    <h2>Full-Time Carpenter & Woodcraft Artist</h2>
+    <p>A passionate carpenter and woodcraft artist with years of experience.</p>
+</header>
     <div class="social-icons">
         <a href="mailto:chhinnamastaf199@gmail.com" title="Email Ashok Sharma">
             <i class="fas fa-envelope"></i>
@@ -221,5 +248,18 @@
     <footer class="footer">
         <p>&copy; 2024 Ashok Sharma. All rights reserved.</p>
     </footer>
+
+<script>
+    function updateDateTime() {
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+        const dateString = now.toLocaleDateString('en-US', options);
+        const timeString = now.toLocaleTimeString('en-US');
+        const bsDate = "६ असोज २०८१, आइतवार"; // Update this with the dynamic calculation for B.S. date if needed
+        document.getElementById('date-time').textContent = `${dateString} ${timeString} B.S. Date: ${bsDate}`;
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
 </body>
 </html>
