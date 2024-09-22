@@ -5,26 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ashok Sharma - A passionate carpenter and woodcraft artist with years of experience.">
     <title>Ashok Sharma - Carpenter & Woodcraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #d9f7d9; /* Light green background */
+            color: #333;
         }
         header {
-            background: #35424a;
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
         }
         header img {
-            max-width: 150px; /* Adjust the size as needed */
-            border-radius: 50%; /* Make it circular */
+            max-width: 150px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+        }
+        .social-icons {
+            text-align: center;
+            padding: 10px 0;
+            background: #3b5a3e;
+        }
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s; /* Added transform for 3D effect */
+        }
+        .social-icons a:hover {
+            color: #ffd700;
+            transform: scale(1.2) rotateY(10deg); /* 3D effect on hover */
         }
         nav {
-            background: #35424a;
+            background: #3b5a3e;
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
@@ -40,6 +58,11 @@
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
         }
         section {
             padding: 20px;
@@ -48,102 +71,155 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        h3 {
+            color: #007bff; /* Blue color for all h3 tags */
+        }
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #35424a;
+            background: #4a6e4d;
             color: #ffffff;
             position: relative;
             bottom: 0;
             width: 100%;
         }
         footer a {
-            color: #ffffff;
+            color: #ffd700;
             margin: 0 10px;
             text-decoration: none;
+            transition: color 0.3s;
         }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        form label {
-            margin: 10px 0 5px;
-        }
-        form input, form textarea {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        form button {
-            padding: 10px;
-            background: #35424a;
+        footer a:hover {
             color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
         }
-        form button:hover {
-            background: #45a049;
+        .contact {
+            text-align: center;
+            padding: 20px;
+        }
+        .contact a {
+            color: #4a6e4d;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #ffd700;
+        }
+        .map {
+            margin: 20px auto;
+            max-width: 100%; /* Ensure it doesn't exceed the screen width */
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+            overflow: hidden;
+        }
+        .map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://i.pinimg.com/736x/a7/62/fd/a762fdf850ea9c976d7cc7f0949de349.jpg" alt="Ashok Sharma">
+    <header style="background-image: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center; color: #ffffff; padding: 20px 0; text-align: center;">
+        <img src="https://i.pinimg.com/736x/a7/62/fd/a762fdf850ea9c976d7cc7f0949de349.jpg" alt="Portrait of Ashok Sharma, Carpenter and Woodcraft Artist">
         <h1>Ashok Sharma</h1>
+        <h2>(श्रीमान अशोक शर्मा)</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Animated-Flag-Nepal.gif" alt="Nepal Flag" style="width:90px; height: auto; border: none;">
         <h2>Full-Time Carpenter & Woodcraft Artist</h2>
+        <p>A passionate carpenter and woodcraft artist with years of experience.</p>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
+
+    <div class="social-icons">
+        <a href="mailto:chhinnamastaf199@gmail.com" title="Email Ashok Sharma">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+9779810136191" title="Call Ashok Sharma">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://www.facebook.com/cvwoodcarving" target="_blank" title="Visit Ashok Sharma's Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/chhinnamastafurniture" target="_blank" title="Visit Ashok Sharma's Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@cwcraft199" target="_blank" title="Visit Ashok Sharma's TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.youtube.com/@cvwoodcarving199" target="_blank" title="Visit Ashok Sharma's YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+
     <section id="about">
         <h3>About Me</h3>
-        <p>I am a passionate carpenter with years of experience in woodcraft. My work is characterized by attention to detail and a love for creating unique pieces.</p>
+        <p>Hi, Namaste visitors! I’m Mr. Ashok Sharma, proudly hailing from Chhinnamasta 03, Saptari, Madhesh Province, Nepal. As a dedicated full-time carpenter and skilled wood carving engineer, I am passionate about transforming wood into beautiful and functional works of art. My commitment to quality craftsmanship and attention to detail ensures that each piece I create is not only unique but also a testament to my love for the craft.</p>
+        
+        <p>I specialize in crafting a variety of furniture and fixtures, including:</p>
+        <ul>
+            <li><strong>Tables</strong>: dining tables, coffee tables, and tea tables</li>
+            <li><strong>Chairs</strong>: dining chairs, rocking chairs, and office chairs</li>
+            <li><strong>Beds</strong>: box beds, double beds, and single beds</li>
+            <li><strong>Storage Solutions</strong>: cabinets, shelves, and dressers</li>
+            <li><strong>Decor Items</strong>: wooden sculptures, wall art, and custom décor</li>
+            <li><strong>Small Wooden Homes</strong>: charming birdhouses, whimsical playhouses, and decorative garden sheds</li>
+            <li><strong>Counters</strong>: custom counters for shops, malls, cafes, and restaurants</li>
+            <li><strong>Windows and Doors</strong>: handcrafted wooden windows and doors tailored to your needs</li>
+            <li><strong>Handcrafted Goddess Statues</strong>: intricately carved statues that capture the essence of divinity and culture</li>
+        </ul>
+
+        <p>In addition to furniture, I can decorate a range of spaces, such as:</p>
+        <ul>
+            <li><strong>Banks</strong></li>
+            <li><strong>Offices</strong></li>
+            <li><strong>Malls</strong></li>
+            <li><strong>Restaurants</strong></li>
+            <li><strong>Cafes</strong></li>
+            <li><strong>Hotels</strong> (including lighting decorations)</li>
+            <li><strong>Homes</strong></li>
+            <li><strong>Community Centers</strong></li>
+        </ul>
+
+        <p>Whether you’re looking for a stunning centerpiece for your living room, practical storage solutions, or an elegant design for your commercial space, I am here to bring your vision to life. Feel free to contact me for any custom designs you require!</p>
     </section>
-    
+
     <section id="projects">
         <h3>Projects</h3>
         <ul>
-            <li>Custom Furniture</li>
-            <li>Home Renovations</li>
-            <li>Wooden Decor Items</li>
-            <li>Outdoor Structures</li>
+            <li>
+                <strong>Custom Furniture:</strong>
+                <p>Creating bespoke furniture pieces tailored to the client's specifications, ensuring both functionality and aesthetics. Each piece is handcrafted with precision to enhance the beauty of any space.</p>
+            </li>
+            <li>
+                <strong>Home Renovations:</strong>
+                <p>Transforming homes by integrating new designs and functionality. This includes everything from kitchen remodels to bathroom upgrades, utilizing high-quality materials to create inviting living spaces.</p>
+            </li>
+            <li>
+                <strong>Wooden Decor Items:</strong>
+                <p>Designing and crafting unique wooden decor items that add character and warmth to any home. From shelves to wall art, each item is crafted with attention to detail and quality.</p>
+            </li>
+            <li>
+                <strong>Outdoor Structures:</strong>
+                <p>Building functional and beautiful outdoor structures such as decks, pergolas, and garden furniture. These projects are designed to withstand the elements while providing an inviting space for relaxation and entertainment.</p>
+            </li>
         </ul>
     </section>
     
-    <section id="contact">
-        <h3>Contact Me</h3>
-        <p>If you're interested in my work or have any questions, feel free to reach out!</p>
-        <p>Email me directly at: <a href="mailto:chhinnamastaf199@gmail.com">chhinnamastaf199@gmail.com</a></p>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="contact" class="section contact">
+        <div class="map">
+            <h3>Find My Shop</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31511.20943968088!2d86.72771239999999!3d26.4528857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eef7af77d050a5%3A0xdc9742b7907ff99a!2sCHHINNAMASTA%20FURNITURE!5e0!3m2!1sen!2sin!4v1646234504742!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
     </section>
     
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Ashok Sharma. All rights reserved.</p>
-        <p>
-            <a href="https://www.facebook.com/cvwoodcarving" target="_blank">Facebook</a> |
-            <a href="https://www.instagram.com/chhinnamastafurniture" target="_blank">Instagram</a> |
-            <a href="https://www.youtube.com/channel/cvwoodcarving199" target="_blank">YouTube</a> |
-            <a href="https://www.tiktok.com/@cwcraft199" target="_blank">TikTok</a>
-        </p>
     </footer>
 </body>
 </html>
