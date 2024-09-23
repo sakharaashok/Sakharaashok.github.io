@@ -12,14 +12,14 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #d9f7d9; /* Light green background */
+            background-color: #d9f7d9;
             color: #333;
         }
         .header-date {
             text-align: center;
-            color: #333; /* Text color */
-            padding: 10px 0; /* Some padding for spacing */
-            background: none; /* Remove background color */
+            color: #333;
+            padding: 10px 0;
+            background: none;
         }
         header {
             background-image: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
@@ -35,22 +35,17 @@
             border: 3px solid #ffffff;
         }
         header h1 {
-            font-size: 2.5em; /* Larger font size for the name */
+            font-size: 2.5em;
             margin: 10px 0;
-            color: #FFD700; /* Gold color for contrast */
+            color: #FFD700;
         }
         header h2 {
-            font-size: 1.5em; /* Slightly larger for the second line */
+            font-size: 1.5em;
             margin: 5px 0;
-            color: #ffffff; /* Keep it white for contrast */
+            color: #ffffff;
             display: flex;
-            align-items: center; /* Align flag and text vertically */
-            justify-content: center; /* Center the items */
-        }
-        header h2 img {
-            margin-left: 10px; /* Space between text and flag */
-            width: 50px; /* Size of the flag */
-            height: auto; /* Maintain aspect ratio */
+            align-items: center;
+            justify-content: center;
         }
         .social-icons {
             text-align: center;
@@ -62,34 +57,11 @@
             margin: 0 15px;
             text-decoration: none;
             font-size: 24px;
-            transition: transform 0.3s, color 0.3s; /* Added transform for 3D effect */
+            transition: transform 0.3s, color 0.3s;
         }
         .social-icons a:hover {
             color: #ffd700;
-            transform: scale(1.2) rotateY(10deg); /* 3D effect on hover */
-        }
-        nav {
-            background: #3b5a3e;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #ffd700;
+            transform: scale(1.2);
         }
         section {
             padding: 20px;
@@ -99,48 +71,37 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         h3 {
-            color: #007bff; /* Blue color for all h3 tags */
+            color: #007bff;
         }
         footer {
             text-align: center;
             padding: 10px 0;
             background: #4a6e4d;
             color: #ffffff;
-            position: relative;
-            bottom: 0;
             width: 100%;
-        }
-        footer a {
-            color: #ffd700;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            color: #ffffff;
-        }
-        .contact {
-            text-align: center;
-            padding: 20px;
-        }
-        .contact a {
-            color: #4a6e4d;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .contact a:hover {
-            color: #ffd700;
         }
         .map {
             margin: 20px auto;
-            max-width: 100%; /* Ensure it doesn't exceed the screen width */
+            max-width: 100%;
             height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             position: relative;
             overflow: hidden;
         }
         .map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        #videos {
+            position: relative;
+            height: 400px; /* Adjust the height as needed */
+            overflow: hidden;
+        }
+        #youtube-video {
             position: absolute;
             top: 0;
             left: 0;
@@ -160,102 +121,126 @@
     <h2>Full-Time Carpenter & Woodcraft Artist</h2>
     <p>A passionate carpenter and woodcraft artist with years of experience.</p>
 </header>
-    <div class="social-icons">
-        <a href="mailto:chhinnamastaf199@gmail.com" title="Email Ashok Sharma">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="tel:+9779810136191" title="Call Ashok Sharma">
-            <i class="fas fa-phone"></i>
-        </a>
-        <a href="https://www.facebook.com/cvwoodcarving" target="_blank" title="Visit Ashok Sharma's Facebook">
-            <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/chhinnamastafurniture" target="_blank" title="Visit Ashok Sharma's Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.tiktok.com/@cwcraft199" target="_blank" title="Visit Ashok Sharma's TikTok">
-            <i class="fab fa-tiktok"></i>
-        </a>
-        <a href="https://www.youtube.com/@cvwoodcarving199" target="_blank" title="Visit Ashok Sharma's YouTube">
-            <i class="fab fa-youtube"></i>
-        </a>
+<div class="social-icons">
+    <a href="mailto:chhinnamastaf199@gmail.com" title="Email Ashok Sharma">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="tel:+9779810136191" title="Call Ashok Sharma">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://www.facebook.com/cvwoodcarving" target="_blank" title="Visit Ashok Sharma's Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/chhinnamastafurniture" target="_blank" title="Visit Ashok Sharma's Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@cwcraft199" target="_blank" title="Visit Ashok Sharma's TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com/@cvwoodcarving199" target="_blank" title="Visit Ashok Sharma's YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+<section id="about">
+    <h3>About Me</h3>
+    <p>Hi, Namaste visitors! I’m Mr. Ashok Sharma, proudly hailing from Chhinnamasta 03, Saptari, Madhesh Province, Nepal. As a dedicated full-time carpenter and skilled wood carving engineer, I am passionate about transforming wood into beautiful and functional works of art. My commitment to quality craftsmanship and attention to detail ensures that each piece I create is unique and a testament to my love for the craft.</p>
+    
+    <p>I specialize in crafting a variety of furniture and fixtures, including:</p>
+    <ul>
+        <li><strong>Tables</strong>: dining, coffee, and tea tables</li>
+        <li><strong>Chairs</strong>: dining, rocking, and office chairs</li>
+        <li><strong>Beds</strong>: box beds, double beds, and single beds</li>
+        <li><strong>Storage Solutions</strong>: cabinets, shelves, and dressers</li>
+        <li><strong>Decor Items</strong>: wooden sculptures, wall art, and custom décor</li>
+        <li><strong>Small Wooden Homes</strong>: birdhouses, playhouses, and decorative sheds</li>
+        <li><strong>Counters</strong>: for shops, malls, cafes, and restaurants</li>
+        <li><strong>Windows and Doors</strong>: handcrafted to your needs</li>
+        <li><strong>Handcrafted Goddess Statues</strong>: capturing the essence of divinity and culture</li>
+    </ul>
+
+    <p>In addition to furniture, I can decorate spaces such as:</p>
+    <ul>
+        <li>Banks</li>
+        <li>Offices</li>
+        <li>Malls</li>
+        <li>Restaurants</li>
+        <li>Cafes</li>
+        <li>Hotels (including lighting decorations)</li>
+        <li>Homes</li>
+        <li>Community Centers</li>
+    </ul>
+
+    <p>Whether you’re looking for a stunning centerpiece for your living room, practical storage solutions, or an elegant design for your commercial space, I am here to bring your vision to life. Feel free to contact me for any custom designs you require!</p>
+</section>
+
+<section id="projects">
+    <h3>Projects</h3>
+    <ul>
+        <li>
+            <strong>Custom Furniture:</strong>
+            <p>Creating bespoke furniture pieces tailored to the client's specifications, ensuring both functionality and aesthetics.</p>
+        </li>
+        <li>
+            <strong>Home Renovations:</strong>
+            <p>Transforming homes by integrating new designs and functionality, from kitchen remodels to bathroom upgrades.</p>
+        </li>
+        <li>
+            <strong>Wooden Decor Items:</strong>
+            <p>Designing unique wooden decor items that add character and warmth to any home.</p>
+        </li>
+        <li>
+            <strong>Outdoor Structures:</strong>
+            <p>Building functional outdoor structures like decks, pergolas, and garden furniture.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="videos">
+    <h3>Watch My Work</h3>
+    <iframe id="youtube-video" src="https://www.youtube.com/embed/dBq5j1KS4BY?enablejsapi=1&autoplay=1&mute=1" title="YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="map">
+        <h3>Find My Shop</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31511.20943968088!2d86.72771239999999!3d26.4528857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eef7af77d050a5%3A0xdc9742b7907ff99a!2sCHHINNAMASTA%20FURNITURE!5e0!3m2!1sen!2sin!4v1646234504742!5m2!1sen!2sin" allowfullscreen></iframe>
     </div>
+</section>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>Hi, Namaste visitors! I’m Mr. Ashok Sharma, proudly hailing from Chhinnamasta 03, Saptari, Madhesh Province, Nepal. As a dedicated full-time carpenter and skilled wood carving engineer, I am passionate about transforming wood into beautiful and functional works of art. My commitment to quality craftsmanship and attention to detail ensures that each piece I create is not only unique but also a testament to my love for the craft.</p>
-        
-        <p>I specialize in crafting a variety of furniture and fixtures, including:</p>
-        <ul>
-            <li><strong>Tables</strong>: dining tables, coffee tables, and tea tables</li>
-            <li><strong>Chairs</strong>: dining chairs, rocking chairs, and office chairs</li>
-            <li><strong>Beds</strong>: box beds, double beds, and single beds</li>
-            <li><strong>Storage Solutions</strong>: cabinets, shelves, and dressers</li>
-            <li><strong>Decor Items</strong>: wooden sculptures, wall art, and custom décor</li>
-            <li><strong>Small Wooden Homes</strong>: charming birdhouses, whimsical playhouses, and decorative garden sheds</li>
-            <li><strong>Counters</strong>: custom counters for shops, malls, cafes, and restaurants</li>
-            <li><strong>Windows and Doors</strong>: handcrafted wooden windows and doors tailored to your needs</li>
-            <li><strong>Handcrafted Goddess Statues</strong>: intricately carved statues that capture the essence of divinity and culture</li>
-        </ul>
+<footer>
+    <p>&copy; 2024 Ashok Sharma. All rights reserved.</p>
+</footer>
 
-        <p>In addition to furniture, I can decorate a range of spaces, such as:</p>
-        <ul>
-            <li><strong>Banks</strong></li>
-            <li><strong>Offices</strong></li>
-            <li><strong>Malls</strong></li>
-            <li><strong>Restaurants</strong></li>
-            <li><strong>Cafes</strong></li>
-            <li><strong>Hotels</strong> (including lighting decorations)</li>
-            <li><strong>Homes</strong></li>
-            <li><strong>Community Centers</strong></li>
-        </ul>
-
-        <p>Whether you’re looking for a stunning centerpiece for your living room, practical storage solutions, or an elegant design for your commercial space, I am here to bring your vision to life. Feel free to contact me for any custom designs you require!</p>
-    </section>
-
-    <section id="projects">
-        <h3>Projects</h3>
-        <ul>
-            <li>
-                <strong>Custom Furniture:</strong>
-                <p>Creating bespoke furniture pieces tailored to the client's specifications, ensuring both functionality and aesthetics. Each piece is handcrafted with precision to enhance the beauty of any space.</p>
-            </li>
-            <li>
-                <strong>Home Renovations:</strong>
-                <p>Transforming homes by integrating new designs and functionality. This includes everything from kitchen remodels to bathroom upgrades, utilizing high-quality materials to create inviting living spaces.</p>
-            </li>
-            <li>
-                <strong>Wooden Decor Items:</strong>
-                <p>Designing and crafting unique wooden decor items that add character and warmth to any home. From shelves to wall art, each item is crafted with attention to detail and quality.</p>
-            </li>
-            <li>
-                <strong>Outdoor Structures:</strong>
-                <p>Building functional and beautiful outdoor structures such as decks, pergolas, and garden furniture. These projects are designed to withstand the elements while providing an inviting space for relaxation and entertainment.</p>
-            </li>
-        </ul>
-    </section>
-    
-    <section id="contact" class="section contact">
-        <div class="map">
-            <h3>Find My Shop</h3>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31511.20943968088!2d86.72771239999999!3d26.4528857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eef7af77d050a5%3A0xdc9742b7907ff99a!2sCHHINNAMASTA%20FURNITURE!5e0!3m2!1sen!2sin!4v1646234504742!5m2!1sen!2sin" 
-                allowfullscreen="" 
-                loading="lazy"></iframe>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <p>&copy; 2024 Ashok Sharma. All rights reserved.</p>
-    </footer>
-
+<script src="https://www.youtube.com/iframe_api"></script>
 <script>
+    let player;
+    const nextVideoId = 'pn0bs-1Fp-w'; // ID of the next video
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-video', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo(); // Start playing the video
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.ENDED) {
+            player.loadVideoById(nextVideoId); // Load the next video
+        }
+    }
+
     function updateDateTime() {
         const now = new Date();
         const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
         const dateString = now.toLocaleDateString('en-US', options);
         const timeString = now.toLocaleTimeString('en-US');
-        const bsDate = "६ असोज २०८१, आइतवार"; // Update this with the dynamic calculation for B.S. date if needed
+        const bsDate = "६ असोज २०८१";
         document.getElementById('date-time').textContent = `${dateString} ${timeString} B.S. Date: ${bsDate}`;
     }
     setInterval(updateDateTime, 1000);
